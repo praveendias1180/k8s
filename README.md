@@ -174,3 +174,26 @@ minikube dashboard
 ```
 
 ![](dashboard.png)
+
+# Pods
+
+nginx.yaml
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+```
+
+```
+kubectl apply -f nginx.yaml
+```
+
+![](nginx.png)
