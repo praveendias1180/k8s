@@ -96,3 +96,10 @@ Although Kubernetes is described as a "container orchestration engine", it lacks
 # Kubernetes Configuration
 
 ![](config.png)
+
+# Minikube
+
+![](Minikube_logo.png)
+
+https://minikube.sigs.k8s.io/docs/
+
