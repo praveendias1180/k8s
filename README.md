@@ -228,4 +228,8 @@ kubectl rollout undo deployment mynginx --to-revision=1
 
 ![](deployments.png)
 
+# Service
+
+![](ssh-minikube.png)
+
 
