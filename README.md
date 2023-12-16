@@ -212,3 +212,20 @@ Labels are key-value pairs attached to Kubernetes objects (e.g. Pods, ReplicaSet
 
 ![](labels.png)
 
+# Deployments
+
+```
+kubectl create deployment mynginx --image=nginx:1.15-alpine
+kubectl get deploy,rs,po -l app=mynginx
+kubectl scale deploy mynginx --replicas=3
+
+kubectl rollout history deploy mynginx
+kubectl rollout history deploy mynginx --revision=1
+
+kubectl set image deployment mynginx nginx=nginx:1.16-alpine
+kubectl rollout undo deployment mynginx --to-revision=1
+```
+
+![](deployments.png)
+
+
