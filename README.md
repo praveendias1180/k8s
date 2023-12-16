@@ -59,3 +59,10 @@ For more than a decade, Borg has been Google's secret, running its worldwide con
 ![](borg.png)
 
 https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/43438.pdf
+
+
+# Certified Kubernetes Application Developer (CKAD)
+
+![](ckad.png)
+
+https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.28.pdf
