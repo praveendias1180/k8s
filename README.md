@@ -47,3 +47,7 @@ https://www.nomadproject.io/
 Docker Swarm is a container orchestrator provided by Docker, Inc. It is part of Docker Engine.
 
 https://docs.docker.com/engine/swarm/
+
+# What is Kubernetes
+
+![](kubernetes.png)
