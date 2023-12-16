@@ -51,3 +51,9 @@ https://docs.docker.com/engine/swarm/
 # What is Kubernetes
 
 ![](kubernetes.png)
+
+# Borg
+
+![](borg.png)
+
+https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/43438.pdf
