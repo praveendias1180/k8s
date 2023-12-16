@@ -52,7 +52,9 @@ https://docs.docker.com/engine/swarm/
 
 ![](kubernetes.png)
 
-# Borg
+# Borg (Meet Google's BorgMasters and Borglets from 2015)
+
+For more than a decade, Borg has been Google's secret, running its worldwide containerized workloads in production. Services we use from Google, such as Gmail, Drive, Maps, Docs, etc., are all serviced using Borg. 
 
 ![](borg.png)
 
