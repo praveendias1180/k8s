@@ -26,14 +26,24 @@ https://azure.microsoft.com/en-us/products/container-instances/#overview
 ## Azure Service Fabric
 Azure Service Fabric is an open source container orchestrator provided by Microsoft Azure.
 
+https://azure.microsoft.com/en-us/products/service-fabric/
+
 ## Kubernetes
 Kubernetes is an open source orchestration tool, originally started by Google, today part of the Cloud Native Computing Foundation (CNCF) project.
+
+https://kubernetes.io/
 
 ## Marathon
 Marathon is a framework to run containers at scale on Apache Mesos and DC/OS.
 
+https://mesosphere.github.io/marathon/
+
 ## Nomad
 Nomad is the container and workload orchestrator provided by HashiCorp.
 
+https://www.nomadproject.io/
+
 ## Docker Swarm
 Docker Swarm is a container orchestrator provided by Docker, Inc. It is part of Docker Engine.
+
+https://docs.docker.com/engine/swarm/
