@@ -161,3 +161,16 @@ minikube remove -p 4docker
 https://kubectl.docs.kubernetes.io/
 
 ![](kubectl.png)
+
+![](pods.png)
+
+# Kubernetes Dashboard
+
+```
+minikube addons list
+minikube addons enable metrics-server
+minikube addons enable dashboard
+minikube dashboard
+```
+
+![](dashboard.png)
