@@ -80,3 +80,9 @@ The API Server is highly configurable and customizable. It can scale horizontall
 # etcd
 
 ![](etcd.png)
+
+# A Pod of Killer Whales (APKW)
+
+A Pod is the smallest scheduling work unit in Kubernetes. It is a logical collection of one or more containers scheduled together, and the collection can be started, stopped, or rescheduled as a single unit of work. 
+
+![](pod.png)
