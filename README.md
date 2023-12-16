@@ -103,3 +103,12 @@ Although Kubernetes is described as a "container orchestration engine", it lacks
 
 https://minikube.sigs.k8s.io/docs/
 
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+minikube start --driver=virtualbox
+```
+
+![](minikube.png)
+
+![](minikube-vb7.png)
