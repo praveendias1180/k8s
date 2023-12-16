@@ -9,3 +9,31 @@ It groups containers that make up an application into logical units for easy man
 https://kubernetes.io/
 
 ![](k8s.png)
+
+# Container Orchestrators
+
+## Amazon Elastic Container Service
+Amazon Elastic Container Service (ECS) is a hosted service provided by Amazon Web Services (AWS) to run containers at scale on its infrastructure.
+
+https://aws.amazon.com/ecs/
+
+
+## Azure Container Instances
+Azure Container Instance (ACI) is a basic container orchestration service provided by Microsoft Azure.
+
+https://azure.microsoft.com/en-us/products/container-instances/#overview
+
+## Azure Service Fabric
+Azure Service Fabric is an open source container orchestrator provided by Microsoft Azure.
+
+## Kubernetes
+Kubernetes is an open source orchestration tool, originally started by Google, today part of the Cloud Native Computing Foundation (CNCF) project.
+
+## Marathon
+Marathon is a framework to run containers at scale on Apache Mesos and DC/OS.
+
+## Nomad
+Nomad is the container and workload orchestrator provided by HashiCorp.
+
+## Docker Swarm
+Docker Swarm is a container orchestrator provided by Docker, Inc. It is part of Docker Engine.
