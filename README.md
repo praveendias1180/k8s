@@ -66,3 +66,7 @@ https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/43438.pdf
 ![](ckad.png)
 
 https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.28.pdf
+
+# Kubernetes Architecture
+
+![](cluster.png)
