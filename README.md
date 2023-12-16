@@ -133,4 +133,14 @@ minikube start --driver=docker --cpus=6 --memory=8g --kubernetes-version="1.24.4
 minikube start --driver=virtualbox -n 3 --container-runtime=containerd --cni=calico -p minibox
 ```
 
+# Minbox
+
+![](minibox.png)
+
+```
+minikube start --driver=virtualbox -n 3 --container-runtime=containerd --cni=calico -p minibox
+minikube stop -p minibox
+```
+
+![](minibox-info.png)
 
