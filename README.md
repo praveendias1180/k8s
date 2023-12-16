@@ -197,3 +197,18 @@ kubectl apply -f nginx.yaml
 ```
 
 ![](nginx.png)
+
+```
+kubectl run firstrun --image=nginx
+kubectl get pods -o wide
+
+kubectl replace --force -f secondrun.yaml
+kubectl delete pods firstrun
+```
+
+# Labels
+
+Labels are key-value pairs attached to Kubernetes objects (e.g. Pods, ReplicaSets, Nodes, Namespaces, Persistent Volumes). Labels are used to organize and select a subset of objects, based on the requirements in place. Many objects can have the same Label(s). Labels do not provide uniqueness to objects. Controllers use Labels to logically group together decoupled objects, rather than using objects' names or IDs.
+
+![](labels.png)
+
