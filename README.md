@@ -155,3 +155,9 @@ minikube remove -p 4docker
 ```
 
 ![](4docker.png)
+
+# Kubectl
+
+https://kubectl.docs.kubernetes.io/
+
+![](kubectl.png)
