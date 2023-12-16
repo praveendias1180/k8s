@@ -140,7 +140,18 @@ minikube start --driver=virtualbox -n 3 --container-runtime=containerd --cni=cal
 ```
 minikube start --driver=virtualbox -n 3 --container-runtime=containerd --cni=calico -p minibox
 minikube stop -p minibox
+minikube delete -p minibox
 ```
 
 ![](minibox-info.png)
 
+
+# 4docker
+
+```
+minikube start -n 4 -p 4docker
+minikube remove -p 4docker
+
+```
+
+![](4docker.png)
