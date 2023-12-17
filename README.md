@@ -392,3 +392,10 @@ sudo bash -c "echo $(minikube ip) blue.io green.io >> /etc/hosts"
 ```
 
 ![](complete.png)
+
+
+# Demo
+
+https://youtu.be/SwFg6WED2uw
+
+![](Kubernetes%20Youtube%20Thumbnail.png)
