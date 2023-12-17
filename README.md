@@ -233,3 +233,22 @@ kubectl rollout undo deployment mynginx --to-revision=1
 ![](ssh-minikube.png)
 
 
+```
+kubectl run pod-hello --image=pbitty/hello-from:latest --port=80 --expose=true
+kubectl get po,svc,ep --show-labels
+minikube service --all
+minikube ssh
+curl <pod ip>
+curl <srv ip>
+
+kubectl edit svc pod-hello
+edit and change to NodePort from ClusterIP
+kubectl get po,svc,ep --show-labels
+minikube service --all
+```
+
+```
+kubectl create deployment deploy-hello --image=pbitty/hello-from:latest --port=80 --replicas=3
+kubectl expose deployment deploy-hello --type=NodePort
+kubectl get deploy,po,svc,ep -l app=deploy-hello --show-labels
+```
