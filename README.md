@@ -255,3 +255,7 @@ kubectl get deploy,po,svc,ep -l app=deploy-hello --show-labels
 
 ![](deploy-from.png)
 ![](deploy-dash.png)
+
+## Service Load Balancing (Default)
+
+![](load-balance.png)
