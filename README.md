@@ -347,3 +347,46 @@ kubectl get configmaps my-config -o yaml
 "An Ingress is a collection of rules that allow inbound connections to reach the cluster Services".
 
 ![](Ingress.png)
+
+```
+minikube addons enable ingress
+```
+
+
+virtual-host-ingress.yaml
+
+```
+apiVersion: networking.k8s.io/v1 
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: virtual-host-ingress
+  namespace: default
+spec:
+  rules:
+  - host: blue.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: webserver-blue-svc
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+  - host: green.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: webserver-green-svc
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+```
+
+```
+sudo bash -c "echo $(minikube ip) blue.io green.io >> /etc/hosts"
+```
