@@ -341,3 +341,9 @@ kubectl get configmaps my-config -o yaml
 ```
 
 ![](configmap.png)
+
+# Ingress API Resource
+
+"An Ingress is a collection of rules that allow inbound connections to reach the cluster Services".
+
+![](Ingress.png)
