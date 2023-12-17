@@ -321,3 +321,23 @@ kubectl describe service web-service
 minikube ip
 ```
 ![](minikube-ip.png)
+
+```
+OR
+minikube service web-service
+OR
+minikube service web-service --url
+```
+
+# Config Map
+
+```
+kubectl create configmap my-config \
+  --from-literal=key1=value1 \
+  --from-literal=key2=value2
+
+
+kubectl get configmaps my-config -o yaml  
+```
+
+![](configmap.png)
