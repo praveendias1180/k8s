@@ -390,3 +390,5 @@ spec:
 ```
 sudo bash -c "echo $(minikube ip) blue.io green.io >> /etc/hosts"
 ```
+
+![](complete.png)
