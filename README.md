@@ -252,3 +252,6 @@ kubectl create deployment deploy-hello --image=pbitty/hello-from:latest --port=8
 kubectl expose deployment deploy-hello --type=NodePort
 kubectl get deploy,po,svc,ep -l app=deploy-hello --show-labels
 ```
+
+![](deploy-from.png)
+![](deploy-dash.png)
