@@ -259,3 +259,65 @@ kubectl get deploy,po,svc,ep -l app=deploy-hello --show-labels
 ## Service Load Balancing (Default)
 
 ![](load-balance.png)
+
+```
+kubectl delete deployments web-dash
+```
+
+webserver.yaml
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+```
+
+```
+kubectl create -f webserver.yaml
+kubectl get replicasets
+kubectl get pods
+kubectl create deployment webserver --image=nginx:alpine --replicas=3 --port=80
+```
+
+webserver-svc.yaml
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+  labels:
+    app: nginx
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: nginx
+```
+
+```
+kubectl create -f webserver-svc.yaml
+OR
+kubectl expose deployment webserver --name=web-service --type=NodePort
+kubectl describe service web-service
+minikube ip
+```
+![](minikube-ip.png)
